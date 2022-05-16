@@ -3,10 +3,10 @@ import React from 'react';
 const Book = ({ service, settreatment }) => {
     const { name, slots } = service;
     return (
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-base-100 shadow-xl">
 
-            <div class="card-body items-center text-center">
-                <h2 class="card-title text-secondary">{name}</h2>
+            <div className="card-body items-center text-center">
+                <h2 className="card-title text-secondary">{name}</h2>
                 <p>
                     {
                         slots.length > 0
@@ -15,12 +15,12 @@ const Book = ({ service, settreatment }) => {
                     }
                 </p>
                 <p>{slots.length}  {slots.length > 1 ? 'SPACES' : 'SPACE'} AVAILABLE</p>
-                <div class="card-actions">
+                <div className="card-actions">
                     <label
                         onClick={() => settreatment(service)}
                         disabled={slots.length === 0}
                         for="booking-modal"
-                        class="btn btn-primary  bg-gradient-to-r from-primary to-secondary text-white font-bold">Book Appointment</label>
+                        className="btn btn-primary  bg-gradient-to-r from-primary to-secondary text-white font-bold">Book Appointment</label>
                 </div>
             </div>
         </div>

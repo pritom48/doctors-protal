@@ -12,7 +12,7 @@ const Contact = () => {
                 <input className='my-3 p-2 rounded-lg' type="email" name="email" placeholder='Email Address' id="" />
                 <input className='p-2 rounded-lg' type="text" placeholder='Subject' />
                 <textarea className='my-3 rounded-lg p-2' name="" placeholder='Your Massage' id="" cols="30" rows="10"></textarea>
-                <button class="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white font-bold ">Submit</button>
+                <button className="btn btn-primary bg-gradient-to-r from-primary to-secondary text-white font-bold ">Submit</button>
             </div>
         </section>
     );
